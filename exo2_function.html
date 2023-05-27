@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+              function filtrerNombresPairs(tableau) {
+            var nombresPairs = [];
+
+            for (var i = 0; i < tableau.length; i++) {
+              if (tableau[i] % 2 === 0) {
+                nombresPairs.push(tableau[i]);
+              }
+            }
+
+            return nombresPairs;
+          }
+          var tab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+          var nombresPairs = filtrerNombresPairs(tab);
+          console.log(nombresPairs);  
+
+    </script>
+</body>
+</html>
